@@ -1,18 +1,16 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-import BestLawyers from '../BestLawyers/BestLawyers';
-import Services from '../Services/Services';
+import Lawyers from '../Lawyers/Lawyers';
 import { useLoaderData } from 'react-router';
 
 const Home = () => {
 
-    const servicesData = useLoaderData();
+    const lawyersData = useLoaderData();
 
     return (
         <div>
             <Banner></Banner>
-            <BestLawyers></BestLawyers>
-            <Services servicesData={servicesData}></Services>
+            <Lawyers lawyersData={lawyersData}></Lawyers>
         </div>
     );
 };
