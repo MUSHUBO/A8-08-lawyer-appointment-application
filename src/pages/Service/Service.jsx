@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, } from 'react';
 import CountUp from 'react-countup';
 
 const Service = ({ service }) => {
-  const { icon, number, title } = service;
+  console.log(service);
+  const {icon, number, title} = service;
+
   const [key, setKey] = useState(0);
   const ref = useRef(null);
 
@@ -23,7 +25,7 @@ const Service = ({ service }) => {
     };
   }, []);
 
-  
+
   return (
     <div ref={ref} className="bg-[#0F0F0F15] rounded-2xl p-10 text-start space-y-4">
       <img className="w-15 h-15" src={icon} alt="Service Icon" />

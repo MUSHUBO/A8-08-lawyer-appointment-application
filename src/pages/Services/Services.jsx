@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 
-const Services = ({ servicesData }) => {
+const Services = () => {
+
+    const [servicesData, setServicesData] = useState([]);
+
+    useEffect(() => {
+        fetch('servicesData.json')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                setServicesData(data);
+            });
+    }, []);
 
     return (
         <div className='w-10/12 mx-auto text-center my-28'>

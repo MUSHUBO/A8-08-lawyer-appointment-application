@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineTrademarkCircle } from "react-icons/ai";
 
 const Lawyer = ({ lawyer }) => {
-    console.log(lawyer);
+    // console.log(lawyer);
     const {image, name, specialty, experience, licenseNumber} = lawyer;
 
     return (
