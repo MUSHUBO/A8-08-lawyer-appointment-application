@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/images/lawyer1.jpg",
+      "name": "Barrister Asif Rahman",
+      "speciality": "Criminal Law",
+      "experience": "10 years",
+      "licenseNumber": "BD-CR-001",
+      "fee": 5000,
+      "availability": ["Sunday", "Tuesday", "Thursday"]
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/images/lawyer2.jpg",
+      "name": "Advocate Nabila Sultana",
+      "speciality": "Family Law",
+      "experience": "8 years",
+      "licenseNumber": "BD-FL-002",
+      "fee": 4500,
+      "availability": ["Monday", "Wednesday"]
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/images/lawyer3.jpg",
+      "name": "Md. Tareq Hasan",
+      "speciality": "Corporate Law",
+      "experience": "12 years",
+      "licenseNumber": "BD-CL-003",
+      "fee": 7000,
+      "availability": ["Saturday", "Monday", "Thursday"]
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/images/lawyer4.jpg",
+      "name": "Sadia Jahan",
+      "speciality": "Intellectual Property",
+      "experience": "6 years",
+      "licenseNumber": "BD-IP-004",
+      "fee": 5500,
+      "availability": ["Sunday", "Wednesday", "Friday"]
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/images/lawyer5.jpg",
+      "name": "Mahmudul Haque",
+      "speciality": "Civil Litigation",
+      "experience": "15 years",
+      "licenseNumber": "BD-CV-005",
+      "fee": 6500,
+      "availability": ["Monday", "Tuesday", "Friday"]
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/images/lawyer6.jpg",
+      "name": "Adv. Farhana Kabir",
+      "speciality": "Immigration Law",
+      "experience": "7 years",
+      "licenseNumber": "BD-IM-006",
+      "fee": 6000,
+      "availability": ["Sunday", "Wednesday"]
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/images/lawyer7.jpg",
+      "name": "Rafiq Ahmed",
+      "speciality": "Tax Law",
+      "experience": "9 years",
+      "licenseNumber": "BD-TX-007",
+      "fee": 5500,
+      "availability": ["Tuesday", "Thursday"]
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/images/lawyer8.jpg",
+      "name": "Advocate Lina Chowdhury",
+      "speciality": "Banking & Finance",
+      "experience": "13 years",
+      "licenseNumber": "BD-BF-008",
+      "fee": 7500,
+      "availability": ["Saturday", "Monday", "Thursday"]
+    },
+    {
+      "id": 9,
+      "image": "https://example.com/images/lawyer9.jpg",
+      "name": "Hasibur Rahman",
+      "speciality": "Environmental Law",
+      "experience": "5 years",
+      "licenseNumber": "BD-EN-009",
+      "fee": 4000,
+      "availability": ["Monday", "Friday"]
+    },
+    {
+      "id": 10,
+      "image": "https://example.com/images/lawyer10.jpg",
+      "name": "Rubina Islam",
+      "speciality": "Human Rights",
+      "experience": "11 years",
+      "licenseNumber": "BD-HR-010",
+      "fee": 5800,
+      "availability": ["Sunday", "Wednesday", "Thursday"]
+    },
+    {
+      "id": 11,
+      "image": "https://example.com/images/lawyer11.jpg",
+      "name": "Nayeem Khan",
+      "speciality": "Labor Law",
+      "experience": "6 years",
+      "licenseNumber": "BD-LB-011",
+      "fee": 4900,
+      "availability": ["Saturday", "Tuesday"]
+    },
+    {
+      "id": 12,
+      "image": "https://example.com/images/lawyer12.jpg",
+      "name": "Adv. Samira Haque",
+      "speciality": "Constitutional Law",
+      "experience": "14 years",
+      "licenseNumber": "BD-CS-012",
+      "fee": 7200,
+      "availability": ["Monday", "Thursday", "Friday"]
+    }
+  ]
+  

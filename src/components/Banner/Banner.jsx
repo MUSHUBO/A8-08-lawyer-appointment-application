@@ -10,7 +10,7 @@ const Banner = () => {
                     
                 <div className="hero-content text-white text-center">
                     <div className="max-w-4xl">
-                        <h1 className="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold">It avoids subjective claims or exaggeration that might raise red flags legally</h1>
+                        <h1 className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold">It avoids subjective claims or exaggeration that might raise red flags legally</h1>
                         <p className="mb-5 text-xs md:text-sm lg:text-base">
                             Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. 
                             Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
