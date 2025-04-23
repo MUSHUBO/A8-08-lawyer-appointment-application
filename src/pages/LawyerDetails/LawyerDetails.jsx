@@ -23,13 +23,13 @@ const LawyerDetails = () => {
     }
 
     return (
-        <div className='w-10/12 mx-auto py-20'>
-            <div className=' text-center bg-gray-300 rounded-2xl p-6 lg:p-20'>
+        <div className='w-10/12 mx-auto mt-8 lg:mb-24'>
+            <div className=' text-center bg-[#0F0F0F15] rounded-2xl p-6 lg:p-20'>
                 <h1 className='text-3xl font-bold mb-4'>Lawyer’s Profile Details</h1>
                 <p>Experienced and dedicated lawyer with expertise in corporate law, litigation, contract negotiation, and legal consulting. Committed to providing strategic legal solutions with professionalism, integrity, and a client-focused approach.</p>
             </div>
 
-            <div className='card card-side bg-base-100 shadow-sm p-2 md:p-6 lg:p-10 rounded-2xl my-8 flex-col sm:flex-row'>
+            <div className='card card-side bg-base-100 shadow-sm border border-gray-200  p-2 md:p-6 lg:p-10 rounded-2xl my-8 flex-col sm:flex-row'>
                 <figure>
                     <img className='rounded-xl w-52 md:w-64 lg:w-80 md:h-64 h-52 lg:h-80' src={lawyer.image} alt="Lawyers-Image" />
                 </figure>
@@ -52,7 +52,7 @@ const LawyerDetails = () => {
                 </div>
             </div>
 
-            <div className='shadow-sm p-2 md:p-6 lg:p-10 rounded-2xl'>
+            <div className='shadow-sm border border-gray-200  p-2 md:p-6 lg:p-10 rounded-2xl'>
                 <h1 className='text-center text-xl lg:text-2xl font-bold'>Book an Appointment</h1>
                 <p className='border-b border-[#14141460] border-dashed my-4'></p>
 

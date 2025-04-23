@@ -16,13 +16,14 @@ const addToStoredDB = (id) => {
     const storedDetailsData = getStoredDetails();
 
     if(storedDetailsData.includes(id)){
-        alert("lawyer already appointments")
+        alert("lawyer already appointments");
     } else {
-        storedDetailsData.push(id)
+        alert('add successfully');
+        storedDetailsData.push(id);
         console.log(storedDetailsData);
         
         const data = JSON.stringify(storedDetailsData);
-        localStorage.setItem('appointmentList', data)
+        localStorage.setItem('appointmentList', data);
     }
 
 }

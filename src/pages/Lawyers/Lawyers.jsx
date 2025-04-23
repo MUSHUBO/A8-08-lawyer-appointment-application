@@ -5,14 +5,14 @@ const Lawyers = ({ lawyersData }) => {
 
     const [card, setCard] = useState([]);
     const [cardPerPage, setCardPerPage] = useState(6);
-    const [page, setPage] = useState(1)
+    const [page, setPage] = useState(1);
 
 
     useEffect(() => {
 
         setCard(lawyersData.slice(0, page * cardPerPage))
 
-    }, [page, setCardPerPage])
+    }, [cardPerPage, lawyersData, page, setCardPerPage])
 
     return (
         <div className='w-10/12 mx-auto text-center'>
