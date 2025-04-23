@@ -1,13 +1,14 @@
 import React from 'react';
 import navbarImg from '../../assets/logo.png'
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
 
     const links = <>
-        <li>Home</li>
-        <li>My-Bookings</li>
-        <li>Blogs</li>
-        <li>Contact Us</li>
+        <NavLink to='/'> Home </NavLink>
+        <NavLink> My-Bookings </NavLink>
+        <NavLink> Blogs </NavLink>
+        <NavLink> Contact Us </NavLink>
     </>
 
     return (

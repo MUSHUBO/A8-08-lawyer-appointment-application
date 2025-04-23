@@ -8,14 +8,14 @@ const Lawyers = ({ lawyersData }) => {
     const [page, setPage] = useState(1)
 
 
-    useEffect(()=> {
+    useEffect(() => {
 
         setCard(lawyersData.slice(0, page * cardPerPage))
 
-    },[page])
+    }, [page])
 
     return (
-        <div className='w-10/12 mx-auto text-center my-24'>
+        <div className='w-10/12 mx-auto text-center'>
             <div>
                 <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Our Best Lawyers</h3>
                 <p className='text-sm lg:text-base mt-4 mb-9'>
@@ -30,10 +30,13 @@ const Lawyers = ({ lawyersData }) => {
                     ></Lawyer>)
                 }
             </div>
-            <button onClick={() => setPage(page + 1)}
-                className='btn bg-[#0EA106] text-white font-bold rounded-full p-6 mt-8'>
-                {card.length === lawyersData.length ? 'No More Lawyer' : 'Show All Lawyer'}
-            </button>
+            {card.length < lawyersData.length && (
+                <button
+                    onClick={() => setPage(page + 1)}
+                    className='btn bg-[#0EA106] text-white font-bold rounded-full p-6 mt-8'>
+                    Show All Lawyer
+                </button>
+            )}
         </div>
     );
 };
