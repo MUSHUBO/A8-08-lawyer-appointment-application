@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { AiOutlineTrademarkCircle } from "react-icons/ai";
 import { CiSquareAlert } from "react-icons/ci";
+import { addToStoredDB } from '../../Utility/AddToDB';
 
 
 const LawyerDetails = () => {
@@ -14,7 +15,12 @@ const LawyerDetails = () => {
     // console.log(newId);
 
     const lawyer = detail.find(lawyer => lawyer.id == newId);
-    console.log(lawyer);
+    // console.log(lawyer);
+
+
+    const handleBooking = (id) => {
+        addToStoredDB(id);
+    }
 
     return (
         <div className='w-10/12 mx-auto py-20'>
@@ -39,7 +45,7 @@ const LawyerDetails = () => {
                     <div className='md:flex gap-4 text-center w-0 font-bold text-[#14141470]'>
                         availability:
                         {
-                            lawyer.availability.map(abailabail => <p className='text-[#FFA000] bg-[#FFA00010] rounded-full px-2 gap-5 font-medium border-2 border-[#FFA00010]'>{abailabail}</p>)
+                            lawyer.availability.map((abailabail, index) => <p key={index} className='text-[#FFA000] bg-[#FFA00010] rounded-full px-2 gap-5 font-medium border-2 border-[#FFA00010]'>{abailabail}</p>)
                         }
                     </div>
                     <p className='font-bold text-[#14141470] '>Consultation Fee: <span className='text-[#0EA106]'> Taka : {lawyer.fee} </span></p>
@@ -58,7 +64,7 @@ const LawyerDetails = () => {
                 
                 <h5 className='text-[#FFA000] bg-[#FFA00010] rounded-2xl md:rounded-full px-4 p-1.5 gap-2 font-medium border-2 border-[#FFA00010] flex items-center w-fit mx-auto'> <CiSquareAlert /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</h5>
                 
-                <button className='w-full mx-auto btn bg-[#0EA106] text-white font-bold rounded-full p-5 px-6 my-10 '>Book Appointment Now</button>
+                <button onClick={()=> handleBooking(lawyer.id)} className='w-full mx-auto btn bg-[#0EA106] text-white font-bold rounded-full p-5 px-6 my-10 '>Book Appointment Now</button>
             </div>
         </div>
     );
