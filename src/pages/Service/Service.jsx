@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, } from 'react';
 import CountUp from 'react-countup';
 
 const Service = ({ service }) => {
-  console.log(service);
+  // console.log(service);
   const {icon, number, title} = service;
 
   const [key, setKey] = useState(0);
