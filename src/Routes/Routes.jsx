@@ -8,6 +8,7 @@ import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import LawyerDetails from '../pages/LawyerDetails/LawyerDetails';
 import Booking from '../pages/Booking/Booking';
+import Blogs from '../pages/Blogs/Blogs';
 
 export const router = createBrowserRouter([
     {
@@ -31,9 +32,17 @@ export const router = createBrowserRouter([
           Component: Booking
         },
         {
+          path: '/blogs',
+          Component: Blogs
+        },
+        {
           path: '/lawyerDetails/:Id',
           loader: ()=> fetch('lawyersData.json'),
           Component: LawyerDetails
+        },
+        {
+          path: '/error',
+          Component: Error
         }
       ]
     },

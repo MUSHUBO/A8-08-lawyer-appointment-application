@@ -18,6 +18,9 @@ const Booking = () => {
 
     return (
         <div className='w-10/12 mx-auto my-6 lg:my-20'>
+            <div>
+
+            </div>
             <div className='text-center'>
                 <h1 className='text-4xl font-bold mb-4'>My Today Appointments {list.length}</h1>
                 <p>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
