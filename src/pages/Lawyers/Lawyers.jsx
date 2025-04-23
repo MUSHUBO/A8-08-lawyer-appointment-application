@@ -12,14 +12,14 @@ const Lawyers = ({ lawyersData }) => {
 
         setCard(lawyersData.slice(0, page * cardPerPage))
 
-    }, [page])
+    }, [page, setCardPerPage])
 
     return (
         <div className='w-10/12 mx-auto text-center'>
             <div>
                 <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Our Best Lawyers</h3>
                 <p className='text-sm lg:text-base mt-4 mb-9'>
-                    Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
+                    Our best lawyers are highly qualified professionals with deep expertise in various legal fields including corporate law, litigation, and legal consulting. Known for their integrity, dedication, and strategic approach, they consistently deliver outstanding results while prioritizing client satisfaction and ethical practice in every case they handle.
                 </p>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 lg:gap-16'>

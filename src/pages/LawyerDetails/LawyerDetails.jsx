@@ -20,7 +20,7 @@ const LawyerDetails = () => {
         <div className='w-10/12 mx-auto py-20'>
             <div className=' text-center bg-gray-300 rounded-2xl p-6 lg:p-20'>
                 <h1 className='text-3xl font-bold mb-4'>Lawyer’s Profile Details</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor amet ut. Suscipit sed est fermentum magna. Quis vitae tempus facilisis turpis imperdiet mattis donec dignissim volutpat.</p>
+                <p>Experienced and dedicated lawyer with expertise in corporate law, litigation, contract negotiation, and legal consulting. Committed to providing strategic legal solutions with professionalism, integrity, and a client-focused approach.</p>
             </div>
 
             <div className='card card-side bg-base-100 shadow-sm p-2 md:p-6 lg:p-10 rounded-2xl my-8 flex-col sm:flex-row'>
