@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
         {
             index: true,
             path: '/',
-            loader: ()=> fetch('lawyersData.json'),
+            loader: ()=> fetch('/lawyersData.json'),
             Component: Home
         },
         {
@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
         },
         {
           path: '/booking',
-          loader: ()=> fetch('lawyersData.json'),
+          loader: ()=> fetch('/lawyersData.json'),
           Component: Booking
         },
         {
@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
         },
         {
           path: '/lawyerDetails/:id',
-          loader: ()=> fetch('lawyersData.json'),
+          loader: ()=> fetch('/lawyersData.json'),
           Component: LawyerDetails
         },
         {
