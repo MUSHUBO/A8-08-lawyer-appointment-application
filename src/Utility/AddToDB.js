@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 const getStoredDetails = () => {
 
     const storedDetailsSTR = localStorage.getItem("appointmentList");
@@ -11,14 +13,14 @@ const getStoredDetails = () => {
 
 }
 
-const addToStoredDB = (id) => {
+const addToStoredDB = (id, name) => {
 
     const storedDetailsData = getStoredDetails();
 
     if(storedDetailsData.includes(id)){
-        alert("lawyer already appointments");
+        toast.warning(`${name} Appointment Already Scheduled For Today!`);
     } else {
-        alert('add successfully');
+        toast.success(`Appointment Scheduled For ${name} successfully!`);
         storedDetailsData.push(id);
         console.log(storedDetailsData);
         

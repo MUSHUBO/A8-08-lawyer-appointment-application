@@ -3,6 +3,8 @@ import { useLoaderData, useParams } from 'react-router';
 import { AiOutlineTrademarkCircle } from "react-icons/ai";
 import { CiSquareAlert } from "react-icons/ci";
 import { addToStoredDB } from '../../Utility/AddToDB';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const LawyerDetails = () => {
@@ -19,8 +21,8 @@ const LawyerDetails = () => {
     // console.log(lawyer);
 
 
-    const handleBooking = (id) => {
-        addToStoredDB(id);
+    const handleBooking = (id, name) => {
+        addToStoredDB(id, name);
     }
 
     return (
@@ -65,7 +67,8 @@ const LawyerDetails = () => {
                 
                 <h5 className='text-[#FFA000] bg-[#FFA00010] rounded-2xl md:rounded-full px-4 p-1.5 gap-2 font-medium border-2 border-[#FFA00010] flex items-center w-fit mx-auto'> <CiSquareAlert /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</h5>
                 
-                <button onClick={()=> handleBooking(lawyer.id)} className='w-full mx-auto btn bg-[#0EA106] text-white font-bold rounded-full p-5 px-6 my-10 '>Book Appointment Now</button>
+                <button onClick={()=> handleBooking(lawyer.id, lawyer.name)} className='w-full mx-auto btn bg-[#0EA106] text-white font-bold rounded-full p-5 px-6 my-10 '>Book Appointment Now</button>
+                <ToastContainer position="top-right" autoClose={2000} />
             </div>
         </div>
     );
