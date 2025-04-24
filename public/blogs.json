@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "question": "What is useState in React?",
+      "answer": "useState is a React Hook that allows you to introduce and manage state within your functional components. It returns a pair: the current state value and a function that enables you to update this value, triggering re-renders when the state changes."
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "The purpose of useEffect is to handle side effects within functional components. These side effects can include data fetching, subscriptions, timers, or directly manipulating the DOM. It serves as a way to manage lifecycle-related operations in a more organized manner."
+    },
+    {
+      "id": 3,
+      "question": "What is a custom hook in React?",
+      "answer": "A custom hook in React is a reusable JavaScript function, named starting with 'use', that encapsulates stateful logic or side effects. It can utilize other built-in React Hooks to share and reuse complex logic across multiple components, promoting cleaner and more maintainable code."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between controlled and uncontrolled components in React?",
+      "answer": "In controlled components, the value of form elements is tied to and controlled by React state. Every change in the input element triggers a state update, making React the single source of truth. Uncontrolled components, on the other hand, rely on the DOM itself to store the form data, and you typically use refs to access their values when needed."
+    },
+    {
+      "id": 5,
+      "question": "What is useFormStatus() in React?",
+      "answer": "useFormStatus is a React Hook that provides information about the submission state of a `<form>`. It returns details such as whether the form is currently submitting, the data submitted upon successful submission, any errors encountered during submission, and the action that initiated the submission."
+    }
+  ]
