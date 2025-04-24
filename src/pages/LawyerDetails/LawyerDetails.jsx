@@ -7,14 +7,15 @@ import { addToStoredDB } from '../../Utility/AddToDB';
 
 const LawyerDetails = () => {
 
-    const detail = useLoaderData();
-    // console.log(detail);
-
-    const { Id } = useParams();
-    const newId = parseInt(Id);
+    const { id } = useParams();
+    const newId = parseInt(id);
     // console.log(newId);
 
-    const lawyer = detail.find(lawyer => lawyer.id == newId);
+    const details = useLoaderData();
+    console.log(details);
+
+
+    const lawyer = details.find(lawyer => lawyer.id === newId);
     // console.log(lawyer);
 
 
