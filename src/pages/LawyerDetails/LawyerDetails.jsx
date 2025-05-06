@@ -66,7 +66,7 @@ const LawyerDetails = () => {
 
                 <h5 className='text-[#FFA000] bg-[#FFA00010] rounded-2xl md:rounded-full px-4 p-1.5 gap-2 font-medium border-2 border-[#FFA00010] flex items-center w-fit mx-auto'> <CiSquareAlert /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</h5>
 
-                <Link to='/booking'>
+                <Link>
                     <button onClick={() => handleBooking(lawyer.id, lawyer.name)} className='w-full mx-auto btn bg-[#0EA106] text-white font-bold rounded-full p-5 px-6 my-10 '>Book Appointment Now</button>
                 </Link>
                 <ToastContainer position="top-right" autoClose={2000} />

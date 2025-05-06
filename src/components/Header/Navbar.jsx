@@ -1,14 +1,26 @@
 import React from 'react';
 import navbarImg from '../../assets/logo.png'
 import { NavLink } from 'react-router';
+import './navLink.css'
 
 const Navbar = () => {
 
     const links = <>
-        <NavLink to='/'> Home </NavLink>
-        <NavLink to='/booking'> My-Bookings </NavLink>
-        <NavLink to='/blogs'> Blogs </NavLink>
-        <NavLink to='/error'> Contact Us </NavLink>
+        <NavLink to='/' className={({ isActive }) => isActive ? "link active" : "link"}>
+            Home
+        </NavLink>
+
+        <NavLink to='/booking' className={({ isActive }) => isActive ? "link active" : "link"}>
+            My-Bookings
+        </NavLink>
+
+        <NavLink to='/blogs' className={({ isActive }) => isActive ? "link active" : "link"}>
+            Blogs
+        </NavLink>
+        
+        <NavLink to='/error' className={({ isActive }) => isActive ? "link active" : "link"}>
+            Contact Us
+        </NavLink>
     </>
 
     return (
@@ -19,8 +31,8 @@ const Navbar = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-gray-600 text-white 
-                        font-medium text-md text-center  space-y-2 py-8 rounded-box z-1 mt-4 ml-3 w-32 p-4 shadow-md shadow-sky-100">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-gray-300
+                        font-medium text-md text-center  space-y-2 py-8 rounded-box z-1 mt-4 ml-3 w-40 p-4 shadow-md shadow-sky-100">
                             {links}
                         </ul>
                     </div>
@@ -30,7 +42,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 flex gap-12 font-medium">
+                    <ul className="link-dropdown menu menu-horizontal px-1 flex gap-12 font-medium">
                         {links}
                     </ul>
                 </div>
